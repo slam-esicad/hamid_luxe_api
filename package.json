@@ -1,20 +1,18 @@
 {
-  "name": "electron-quick-start",
+  "name": "PierreFeuilleCiseaux",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "En développement",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/LapinDev/pierre_feuille_ciseaux",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "PFC",
+    "Pierre feuille ciseaux"
   ],
-  "author": "GitHub",
+  "author": "Lap",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^5.0.0"

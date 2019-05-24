@@ -1,0 +1,37 @@
+html, body {
+    background-color: lightgray;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.btn {
+	border:none;
+	padding:6px 0 6px 0;
+	border-radius:2px;
+	box-shadow: 1px 1px 3px black;
+	background:#fff;
+	font:bold 13px Arial;
+	color:#555;
+	width: 7%;
+	margin: 10px; 
+}
+
+.btn:hover {
+	box-shadow: 1px 1px 7px black;
+	color: black;
+}
+
+i {
+	color: white;
+	text-shadow: 1px 1px 10px black;
+}
+
+#resultat {
+	border-radius: 10px;
+	box-shadow:2px 2px 5px #aaa;
+
+	background-color: #fff;
+	display: block;
+	margin: 50px;
+	padding: 1%;
+}
