@@ -1,10 +1,12 @@
 const { app, BrowserWindow } = require('electron')
-function createWindow () {
+
+let createWindow = () => {
   console.log("Salut petit curieux !") // Salut autre petit curieux ! (Github)
   // Cree la fenetre du navigateur.
   let win = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: path.join(__dirname, 'assets/icons/png/64x64.png')
     webPreferences: {
       nodeIntegration: true
     }
@@ -16,10 +18,10 @@ function createWindow () {
 app.on('ready', createWindow)
 
 
-app.on('window-all-closed', function () {
+app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
 })
 
-app.on('activate', function () {
+app.on('activate', () => {
     if (mainWindow === null) createWindow()
 })

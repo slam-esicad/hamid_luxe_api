@@ -1,10 +1,11 @@
 {
   "name": "PierreFeuilleCiseaux",
   "version": "1.0.0",
-  "description": "En développement",
+  "description": "Un jeu très basique connu de tous, le PierreFeuilleCiseaux ! Récolte un maximum de point",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . PFC --overwrite"
   },
   "repository": "https://github.com/LapinDev/pierre_feuille_ciseaux",
   "keywords": [

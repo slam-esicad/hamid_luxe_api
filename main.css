@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 html, body {
     background-color: lightgray;
     font-family: sans-serif;
     text-align: center;
+}
+
+.titreApp {
+	font-family: 'Ubuntu';
+
+	color: white;
+	text-shadow: 1px 1px 4px black;
 }
 
 .btn {
@@ -26,12 +36,18 @@ i {
 	text-shadow: 1px 1px 10px black;
 }
 
-#resultat {
-	border-radius: 10px;
+#block {
+	border-radius: 3px;
 	box-shadow:2px 2px 5px #aaa;
 
 	background-color: #fff;
 	display: block;
 	margin: 50px;
 	padding: 1%;
+
+	font-family: 'Roboto', sans-serif;
+}
+
+.desc {
+	font-style: italic;
 }
