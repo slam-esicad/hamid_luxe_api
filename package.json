@@ -1,21 +1,17 @@
 {
-  "name": "PierreFeuilleCiseaux",
+  "name": "Luxe_API",
   "version": "1.0.0",
-  "description": "Un jeu très basique connu de tous, le PierreFeuilleCiseaux ! Récolte un maximum de point",
+  "description": "Prpjet d'API reliant les informations du projet LuxeControl",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . PFC --overwrite"
+    "build": "electron-packager . Luxe_API --icon=./logo.ico --overwrite"
   },
   "repository": "https://github.com/LapinDev/pierre_feuille_ciseaux",
-  "keywords": [
-    "Electron",
-    "PFC",
-    "Pierre feuille ciseaux"
-  ],
-  "author": "Lap",
+  "author": "MANSOURI Hamid",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^5.0.0"
+    "electron": "^5.0.0",
+    "electron-packager": "^17.1.2"
   }
 }

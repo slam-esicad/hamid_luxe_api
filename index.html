@@ -1,40 +1,70 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <title>Pierre - Feuille - Ciseaux</title>
+        <title>Luxecontrol - API</title>
+        <meta charset="utf-8">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Italianno&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.js"></script>
         <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     </head>
     <body>
+    <h1 class="title">LUXE API</h1>
 
-        <h1 class="titreApp">Pierre - Feuille - Ciseaux</h1>
 
-        <i class="fas fa-hand-rock"></i> <button class="btn">Pierre</button>
-        <i class="fas fa-hand-paper"></i> <button class="btn">Feuille</button>
-        <i class="fas fa-hand-scissors"> </i><button class="btn"></i>Ciseaux</button>
-      
-        <div id="block">
-            <p>Résultats</p>
-            <p class="textResult"></p>
-            <p class="textPoint">Points : </p>
+    <div class="ui container">
+        <h3>Trouver une voiture
+
+        <div class="ui form" method="POST">
+            <div class="two fields">
+                <div class="field">
+                    <div class="field">
+                        <label for="reg_number">Immatriculation</label>
+                        <input placeholder="Ex : XX-000-XX" type="text" name="reg_number" id="reg_number">
+                    </div><br>
+
+                    <div class="field">
+                        <button  id="submit" class="ui teal button">Trouver</button>
+                    </div>
+                </div>
+
+
+
+                <div class="two fields">
+                    <div class="field">
+                        <label for="startdate">Date de début</label>
+                        <input type="date" name="startdate" id="startdate">
+                    </div>
+                    <div class="field">
+                        <label for="enddate">Date de fin</label>
+                        <input type="date" name="enddate" id="enddate">
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div id="block">
-            <p class="desc">Un jeu très basique connu de tous, le <u>Pierre  Feuille Ciseaux</u> ! Récolte un maximum de point. <u>Sauvergarde</u> ton score dans la tête et <b>fait jouer à tes amis</b> ! Fini les faintes <u>rusées</u> de tes adversaires ! Joue directement avec un <u>robot prêt à te mettre la patée</u> !</p>
+        <div id="result">
+            <h3 id="title_result" class="ui header"></h3>
+            <h3 id="selled" class="ui"></h3>
+            <p id="content">
+                <br><img id="r_img" src="http://localhost:8000/uploads/S0-modele-citroen-c3-aircross-65e35db052d0f.jpg" alt="Image de la voiture">
+                <br>Modèle : <span id="r_model"></span><br>
+                Année : <span id="r_year"></span><br>
+                Kilométrage : <span id="r_km"></span> Km<br>
+                Immatriculation : <span id="r_regNumber"></span><br>
+                Carburant : <span id="r_energy"></span><br>
+                Réservoir : <span id="r_tank"></span> L<br>
+                Puissance (ch) : <span id="r_horsepower"></span> Ch<br>
+                Boîte de vitesse : <span id="r_gearbox"></span><br>
+                Nombre de portes : <span id="r_doors"></span> portes<br>
+                Couleur : <span id="r_color"></span><br>
+                Prix journalier : <span id="r_dayprice"></span> €<br>
+                Prix de vente : <span id="r_buyprice"></span> €<br>
 
-            <br><br><br>
-
-            Si tu <b>gagnes</b>   : <b>Tu augmentes d'un point</b><br>
-            Si tu <b>perds</b>    : <b>Tu perds tout tes points</b><br>
-            Si tu <b>égalises</b> : <b>Tu perds un point sauf si tu as plus de 5 points, alors tu en perds 2</b>
+            </p>
         </div>
-
-        <center><p><i>Created by Lap (Hamid)</i></p></center>
-
-        <script>
-            // You can also require other files to run in this process
-            require('./renderer.js')
-        </script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="renderer.js"></script>
     </body>
 </html>

@@ -1,53 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+}
 
 html, body {
-    background-color: lightgray;
-    font-family: sans-serif;
-    text-align: center;
-}
-
-.titreApp {
-	font-family: 'Ubuntu';
-
+	background-color: #202739;
+	font-family: sans-serif;
 	color: white;
-	text-shadow: 1px 1px 4px black;
 }
 
-.btn {
-	border:none;
-	padding:6px 0 6px 0;
-	border-radius:2px;
-	box-shadow: 1px 1px 3px black;
-	background:#fff;
-	font:bold 13px Arial;
-	color:#555;
-	width: 7%;
-	margin: 10px; 
+.ui.form label {
+	color: white !important;
 }
 
-.btn:hover {
-	box-shadow: 1px 1px 7px black;
-	color: black;
+.title {
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Italianno', sans-serif;
+	letter-spacing: 10px;
+	margin-top: 30px !important;
+	margin-bottom: 100px;
 }
 
-i {
-	color: white;
-	text-shadow: 1px 1px 10px black;
+#result {
+	margin-top: 50px;
+} #result > * {
+	  color: white !important;
+  }
+
+#content{
+	font-size: 22px;
 }
 
-#block {
-	border-radius: 3px;
-	box-shadow:2px 2px 5px #aaa;
-
-	background-color: #fff;
-	display: block;
-	margin: 50px;
-	padding: 1%;
-
-	font-family: 'Roboto', sans-serif;
-}
-
-.desc {
-	font-style: italic;
+#r_img {
+	width: 350px;
+	border-radius: 10px;
 }

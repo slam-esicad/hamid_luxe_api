@@ -1,12 +1,12 @@
 const { app, BrowserWindow } = require('electron')
+const {join} = require("path");
 
 let createWindow = () => {
-  console.log("Salut petit curieux !") // Salut autre petit curieux ! (Github)
-  // Cree la fenetre du navigateur.
+
   let win = new BrowserWindow({
     width: 800,
     height: 600,
-    icon: path.join(__dirname, 'assets/icons/png/64x64.png')
+    icon: join(__dirname, 'logo.ico'),
     webPreferences: {
       nodeIntegration: true
     }
@@ -16,7 +16,6 @@ let createWindow = () => {
 }
 
 app.on('ready', createWindow)
-
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') app.quit()
